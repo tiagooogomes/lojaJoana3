@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>LOJA DA JOANA</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h1>Contabilidade da Lojinha da <span>Joana</span></h1>
+            <form>
+                <div id="campos">
+                    <input type="text" id="nomeDoCliente" placeholder="Nome"/>
+                    <input type="date" id="dataDoVencimento" placeholder="Vencimento"/>
+                    <input type="number" id="valorDaCompra" placeholder="Valor"/>
+                </div>
+                <div id="botoes">
+                    <input type="button" onclick="inserirArray()" value="SALVAR"/>
+                    <input type="button" onclick="adiconarJuros()" value="CALCULAR"/>
+                    <input type="button" onclick="organizarPorCliente()" value="CLIENTES" />
+                    <input type="button" onclick="organizarPorVencimento()" value="ATRASO" />
+                </div>
+            </form>
+            <form>
+                <div id="filtro">
+                    <input type="date" id="dataMinima" />
+                    <input type="date" id="dataMaxima" />
+                    <input type="number" id="valorMinimo" placeholder="MÍNIMO" />
+                    <input type="number" id="valorMaximo"placeholder="MÁXIMO"/>
+                </div>
+                <div id="filtrar">
+                    <input type="button" value="FILTRAR" onclick="fazerFiltragem()">
+                </div>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Nome</td>
+                        <td>Vencimento</td>
+                        <td>Valor</td>
+                        <td>Total Com Juros</td>
+                    </tr>
+                </thead>
+                <tbody id="tabela2">
+                </tbody>
+            </table>  
+            <h2 id="teste"></h2>  
+        </main>
+        <footer>
+            <h3>by. Aspirante Tiago Santos</h3>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

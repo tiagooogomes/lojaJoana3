@@ -1,0 +1,160 @@
+body{
+    background-color: #0E1A26;
+    margin: 0;
+}
+
+span{
+    display: block;
+}
+
+h1{
+    color: #B8B7BD;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Lily Script One', cursive;
+    margin-top: 5%;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color: #B8B7BD;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input{
+    width: 25%;
+    height: 85px;
+}
+
+#campos{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+#campos input{
+    background-color: transparent;
+    border: 3px solid #B8B7BD;
+    color: #B8B7BD;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#campos input::placeholder{
+    color: #B8B7BD;
+}
+
+#botoes{
+    width: 86%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    margin-left: 7%;
+}
+#botoes input{
+    background-color: #B8B7BD;
+    width: 22%;
+    border-radius: 15px;
+    color: #0E1A26;
+    font-size: 40px;
+}
+
+#botoes input:hover{
+    background-color: #0E1A26;
+    color: #B8B7BD;
+    border: none;
+}
+
+#botoes input:hover{
+    cursor: pointer;
+}
+
+tr, table{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+tr h3{
+    text-align: center;
+    width: 100%;
+    margin-left: 150%;
+}
+
+
+thead td{
+    background-color: #B8B7BD;
+    color: #0E1A26;
+}
+
+td{
+    width: 25%;
+    height: 60px;
+    text-align: center;
+    font-size: 40px;
+    color: #B8B7BD;
+    border-radius: 10px;
+}
+
+table{
+    margin-top: 10%;
+}
+
+#filtro{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+#filtro input{
+    width: 15%;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid #B8B7BD;
+    color: #B8B7BD;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+#filtro input::placeholder{
+    color: #B8B7BD;
+}
+
+#filtrar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#filtrar input{
+    width: 15%;
+    height: 40px;
+    background-color: #B8B7BD;
+    border-radius: 15px;
+    color: #0E1A26;
+    font-size: 20px;
+}
+
+#filtrar input:hover{
+    cursor: pointer;
+    background-color: #0E1A26;
+    color: #B8B7BD;
+    border: none;
+    font-size: 25px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+}
